@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* Description: Get a random number and check its last digit, compare it with 5*/
 int main(void)
 {
 	int n;
