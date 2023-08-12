@@ -1,9 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* Description: Get a random number and check its last digit, compare it with 5*/
+/* main - Get a random number and check its last digit, compare it with 5*/
 int main(void)
 {
 	int n;
