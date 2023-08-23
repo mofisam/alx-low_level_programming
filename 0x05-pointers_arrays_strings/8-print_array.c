@@ -6,15 +6,14 @@
  */
 void print_array(int *a, int n)
 {
-	int index;
+		int i;
 
-	for (index = 0; index < n; index++)
+	for (i = 0; i < n; i++)
 	{
-		printf("%d", a[index]);
-		if (index != (n - 1))
-		{
-			printf(", ");
-		}
+		if (i == 0)
+			printf("%d", a[i]);
+		else
+			printf(", %d", a[i]);
 	}
-	putchar('\n');
+		printf("\n");
 }
