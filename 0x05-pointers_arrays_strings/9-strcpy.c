@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_array - function that prints n elements of an array of integers
+ * *_strcpy - function that prints n elements of an array of integers
  * @dest: pointer to the buffer in which we copy the string
  * @src: string to be copied
  * Return: the pointer to dest
