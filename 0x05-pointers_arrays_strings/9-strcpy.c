@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * *_strcpy - function that prints n elements of an array of integers
  * @dest: pointer to the buffer in which we copy the string
