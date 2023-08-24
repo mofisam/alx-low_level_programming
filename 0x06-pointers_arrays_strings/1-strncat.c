@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *_strcat - Write a function that concatenates two strings
+ * _strncat - Write a function that concatenates two strings
  * @dest: This is the output  dest
  * @src: This is the input src
  * @n: This is the number bytes fro src
