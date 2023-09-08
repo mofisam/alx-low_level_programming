@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * *_calloc - function allocates memory for an array of nmemb 
+ * *_calloc - function allocates memory for an array of nmem
  * elements of size
  * @nmemb: the length to allocate in the memory
  * @size: the size of casting to save
