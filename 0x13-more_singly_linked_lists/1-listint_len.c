@@ -7,7 +7,7 @@
  */
 size_t listint_len(const listint_t *h)
 {
-	unsigned int my_count;
+	size_t my_count;
 
 	if (h == NULL)
 	{
