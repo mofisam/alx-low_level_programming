@@ -11,7 +11,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	listint_t *n_node;
 
 	/* Allocate memory for the new node. */
-	new_node = malloc(sizeof(listint_t));
+	n_node = malloc(sizeof(listint_t));
 	if (!n_node)
 	{
 		/* Allocation failed, return NULL.*/
