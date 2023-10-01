@@ -12,12 +12,12 @@
 int sum_listint(listint_t *head)
 {
 	listint_t *cursor = head;
-	int sum = 0; // Initialize the sum.
+	int sum = 0; /*Initialize the sum.*/
 
 	while (cursor != NULL)
 	{
-		sum += cursor->n; // Add the current node's data to the sum.
-		cursor = cursor->next; // Move to the next node.
+		sum += cursor->n; /*Add the current node's data to the sum.*/
+		cursor = cursor->next; /*Move to the next node.*/
 	}
 
 	return (sum);
