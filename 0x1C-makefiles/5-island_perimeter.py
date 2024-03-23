@@ -1,27 +1,31 @@
 #!/usr/bin/python3
-"""find the perimeter"""
+"""Module that calculates the perimeter of an island in a grid."""
+
+
+def num_water_neighbors(grid, i, j):
+    """Returns the number of water neighbors a cell has in a grid."""
+
+    num = 0
+
+    if i <= 0 or not grid[i - 1][j]:
+        num += 1
+    if j <= 0 or not grid[i][j - 1]:
+        num += 1
+    if j >= len(grid[i]) - 1 or not grid[i][j + 1]:
+        num += 1
+    if i >= len(grid) - 1 or not grid[i + 1][j]:
+        num += 1
+
+    return num
 
 
 def island_perimeter(grid):
-        """finds the perimeter using the find the perimeter function"""
-            perimeter = 0
+    """Returns the perimeter of the island in grid."""
 
-                for x in range(len(grid)):
-                            for y in range(len(grid[x])):
-                                            if (grid[x][y]):
-                                                                perimeter += 4
-                                                                                perimeter -= neighborfinder(grid, x, y)
+    perim = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            if grid[i][j]:
+                perim += num_water_neighbors(grid, i, j)
 
-                                                                                    return perimeter
-
-
-                                                                                def neighborfinder(grid, x, y):
-                                                                                        """finds the number of neighbors"""
-                                                                                            count = 0
-
-                                                                                                if (x > 0 and grid[x - 1][y] == 1):
-                                                                                                            count += 2
-                                                                                                                if (y > 0 and grid[x][y - 1] == 1):
-                                                                                                                            count += 2
-
-                                                                                                                                return count
+    return perim
